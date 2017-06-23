@@ -1,7 +1,7 @@
 # problem statement
 sets azure webapp appsettings
 
-# example usage
+# usage
 
 > note: in examples, VERSION represents a version of the azure.webapp.appsettings.set pkg
 
@@ -36,5 +36,24 @@ run:
       loginTenantId:
       loginType:
       # end optional args
+```
+
+# examples
+
+## set multiple "app settings"
+
+```yaml
+run:
+  op:
+    pkg: { ref: github.com/opspec-pkgs/azure.webapp.appsettings.set#VERSION }
+    inputs: 
+      subscriptionId:
+      loginId:
+      loginSecret:
+      name:
+      resourceGroup:
+      settings: >-
+        someConstantKey=$(someVarValue)
+        $(someVarKey)=someConstantValue
 ```
 
