@@ -1,9 +1,8 @@
 # problem statement
 sets azure webapp appsettings
 
+> note: in usage & examples, VERSION represents a version of the azure.webapp.appsettings.set pkg
 # usage
-
-> note: in examples, VERSION represents a version of the azure.webapp.appsettings.set pkg
 
 ## install
 
