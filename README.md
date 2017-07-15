@@ -1,9 +1,8 @@
 # Problem statement
 sets azure webapp appsettings
 
-
-> note: in usage & examples, VERSION represents a version of the azure.webapp.appsettings.set pkg
-# Usage
+# Example usage
+> note: in examples, VERSION represents a version of the azure.webapp.appsettings.set pkg
 
 ## install
 
@@ -38,9 +37,7 @@ run:
       # end optional args
 ```
 
-# Examples
-
-## set multiple "app settings"
+## compose w/ multiple "app settings"
 
 ```yaml
 op:
