@@ -1,9 +1,9 @@
-# problem statement
+# Problem statement
 sets azure webapp appsettings
 
 
 > note: in usage & examples, VERSION represents a version of the azure.webapp.appsettings.set pkg
-# usage
+# Usage
 
 ## install
 
@@ -38,22 +38,25 @@ run:
       # end optional args
 ```
 
-# examples
+# Examples
 
 ## set multiple "app settings"
 
 ```yaml
-run:
-  op:
-    pkg: { ref: github.com/opspec-pkgs/azure.webapp.appsettings.set#VERSION }
-    inputs: 
-      subscriptionId:
-      loginId:
-      loginSecret:
-      name:
-      resourceGroup:
-      settings: >-
-        someConstantKey=$(someVarValue)
-        $(someVarKey)=someConstantValue
+op:
+  pkg: { ref: github.com/opspec-pkgs/azure.webapp.appsettings.set#VERSION }
+  inputs: 
+    subscriptionId:
+    loginId:
+    loginSecret:
+    name:
+    resourceGroup:
+    settings: >-
+      someConstantKey=$(someVarValue)
+      $(someVarKey)=someConstantValue
 ```
 
+# Support
+
+join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or [open an issue](https://github.com/opspec-pkgs/azure.webapp.appsettings.set/issues)
