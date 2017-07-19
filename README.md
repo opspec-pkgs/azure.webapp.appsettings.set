@@ -19,22 +19,21 @@ opctl run github.com/opspec-pkgs/azure.webapp.appsettings.set#VERSION
 ## compose
 
 ```yaml
-run:
-  op:
-    pkg: { ref: github.com/opspec-pkgs/azure.webapp.appsettings.set#VERSION }
-    inputs: 
-      subscriptionId:
-      loginId:
-      loginSecret:
-      name:
-      resourceGroup:
-      # begin optional args
-      settings:
-      slot:
-      slotSettings:
-      loginTenantId:
-      loginType:
-      # end optional args
+op:
+  pkg: { ref: github.com/opspec-pkgs/azure.webapp.appsettings.set#VERSION }
+  inputs: 
+    subscriptionId:
+    loginId:
+    loginSecret:
+    name:
+    resourceGroup:
+    # begin optional args
+    settings:
+    slot:
+    slotSettings:
+    loginTenantId:
+    loginType:
+    # end optional args
 ```
 
 ## compose w/ multiple "app settings"
